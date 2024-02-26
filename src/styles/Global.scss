@@ -23,11 +23,13 @@ body {
     margin: auto;
 
     .header {
-      display: flex;
+      display: grid;
+      grid-template-columns: 120px 1fr 110px;
       justify-content: space-between;
       align-items: center;
 
       &__image {
+        width: fit-content;
         display: flex;
         align-items: center;
         box-shadow: $shadow-soft;
@@ -161,8 +163,58 @@ body {
           &__description {
             font-weight: 400;
             color: $text-secondary;
+
+            &--link {
+              cursor: pointer;
+              text-decoration: none;
+            }
           }
         }
+      }
+    }
+  }
+
+  @media print {
+    .container {
+      .header {
+        &__buttons {
+          display: none;
+        }
+      }
+
+      .description {
+        margin: 1rem 0 2rem;
+
+        &__title {
+          font-size: 1.5rem;
+          margin-bottom: 10px;
+        }
+
+        &__text {
+          font-size: 1rem;
+          text-align: justify;
+        }
+      }
+
+      .skills {
+        padding: 1rem;
+
+        &__title {
+          font-size: 1.5rem;
+        }
+      }
+
+      .lister {
+        padding: 1rem;
+
+        &__title {
+          font-size: 1.5rem;
+          margin-bottom: 5px;
+        }
+      }
+
+      .break {
+        page-break-before: always;
       }
     }
   }

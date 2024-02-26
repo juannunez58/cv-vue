@@ -15,7 +15,8 @@ efectivas en distintos contextos. Mi habilidad para integrarme con éxito
 en equipos de trabajo y mantener una sincronía armoniosa contribuye a un
 ambiente de colaboración productivo y eficiente.`;
 
-const profileTextEn = `As a front-end developer with ${workedMonthsEn} of experience in the industry, I have a solid understanding and ability to abstract the requirements that arise in each project. Throughout my career, I have conceived and developed impactful landing pages and effective administrative dashboards. My background includes collaborations on large projects for distinguished banking institutions and leading companies in the telecommunications sector. My experience has enabled me to easily adapt to a wide variety of codes and projects related to JavaScript, which allows me to provide effective solutions in different contexts. My ability to successfully integrate into work teams and maintain harmonious synchronicity contributes to a productive and efficient collaborative environment.`;
+const profileTextEn = `
+As a front-end developer with ${workedMonthsEn} of experience in the industry, I have a solid understanding and ability to abstract the requirements presented in each project. Throughout my career, I have developed effective landing pages, administrative dashboards. My track record includes collaborations on large-scale projects for distinguished banking institutions and leading companies in the telecommunications sector. My experience has equipped me to easily adapt to a wide variety of JavaScript-related code and projects, allowing me to provide effective solutions in different contexts. My ability to successfully integrate into teams and maintain harmonious synchronization contributes to a productive and efficient collaborative environment.`;
 
 //JOB EXPERIENCE - EXPERIENCIA LABORAL
 const jobExperienceTitle = `Experiencia laboral (${workedMonths})`;
@@ -79,11 +80,13 @@ const referenceData = [
   {
     title: "Ruben Cabrera Ricaurte - Software Developer en Neoris",
     description: "+57 3164186222",
+    type: "phone",
   },
   {
     title:
       "Jostin Rojas Moreno - It helpdesk regional supervisor en Sykes Colombia S.A.S",
     description: "+57 3043788467",
+    type: "phone",
   },
 ];
 
@@ -91,11 +94,13 @@ const referenceDataEn = [
   {
     title: "Ruben Cabrera Ricaurte - Software Developer at Neoris",
     description: "+57 3164186222",
+    type: "phone",
   },
   {
     title:
       "Jostin Rojas Moreno - It helpdesk regional supervisor at Sykes Colombia S.A.S",
     description: "+57 3043788467",
+    type: "phone",
   },
 ];
 
@@ -180,11 +185,6 @@ const personalData = [
       "https://www.linkedin.com/in/juan-david-nuñez-aguilar-92b729212/",
     type: "url",
   },
-  {
-    title: "Github",
-    description: "https://github.com/le7els10",
-    type: "url",
-  },
 ];
 
 const personalDataEn = [
@@ -202,11 +202,6 @@ const personalDataEn = [
     title: "Linkedin",
     description:
       "https://www.linkedin.com/in/juan-david-nuñez-aguilar-92b729212/",
-    type: "url",
-  },
-  {
-    title: "Github",
-    description: "https://github.com/le7els10",
     type: "url",
   },
 ];

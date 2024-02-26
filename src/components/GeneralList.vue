@@ -8,7 +8,32 @@
         :key="index"
       >
         <p class="lister__item__title">{{ item.title }}</p>
-        <span class="lister__item__description">{{ item.description }}</span>
+        <span v-if="!item.type" class="lister__item__description">{{
+          item.description
+        }}</span>
+        <a
+          v-if="item.type === 'email'"
+          :href="'mailto:' + item.description"
+          target="_blank"
+          class="lister__item__description lister__item__description--link"
+        >
+          {{ item.description }}
+        </a>
+        <a
+          v-if="item.type === 'phone'"
+          :href="'tel:' + item.description"
+          target="_blank"
+          class="lister__item__description lister__item__description--link"
+        >
+          {{ item.description }}
+        </a>
+        <a
+          v-if="item.type === 'url'"
+          :href="item.description"
+          target="_blank"
+          class="lister__item__description lister__item__description--link"
+          >{{ item.description }}</a
+        >
       </div>
     </div>
   </div>
@@ -23,6 +48,7 @@ interface generalListInterface {
 interface listDataInterface {
   title: string;
   description: string;
+  type?: "url" | "phone" | "email";
 }
 import { defineComponent, PropType } from "vue";
 

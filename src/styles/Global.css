@@ -15,11 +15,14 @@ body .container {
   margin: auto;
 }
 body .container .header {
-  display: flex;
+  display: grid;
+  grid-template-columns: 120px 1fr 110px;
   justify-content: space-between;
   align-items: center;
 }
 body .container .header__image {
+  width: -moz-fit-content;
+  width: fit-content;
   display: flex;
   align-items: center;
   box-shadow: 6px 6px 12px #b8b9be, -6px -6px 12px #fff;
@@ -132,4 +135,40 @@ body .container .lister__container .lister__item__title {
 body .container .lister__container .lister__item__description {
   font-weight: 400;
   color: #44476a;
+}
+body .container .lister__container .lister__item__description--link {
+  cursor: pointer;
+  text-decoration: none;
+}
+@media print {
+  body .container .header__buttons {
+    display: none;
+  }
+  body .container .description {
+    margin: 1rem 0 2rem;
+  }
+  body .container .description__title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  body .container .description__text {
+    font-size: 1rem;
+    text-align: justify;
+  }
+  body .container .skills {
+    padding: 1rem;
+  }
+  body .container .skills__title {
+    font-size: 1.5rem;
+  }
+  body .container .lister {
+    padding: 1rem;
+  }
+  body .container .lister__title {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+  }
+  body .container .break {
+    page-break-before: always;
+  }
 }/*# sourceMappingURL=Global.css.map */
