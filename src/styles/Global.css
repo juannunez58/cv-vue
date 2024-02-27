@@ -140,6 +140,50 @@ body .container .lister__container .lister__item__description--link {
   cursor: pointer;
   text-decoration: none;
 }
+@media screen and (max-width: 400px) {
+  body .container {
+    margin-bottom: 5rem;
+  }
+  body .container .header {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+  body .container .header__image {
+    display: none;
+  }
+  body .container .header__buttons {
+    position: fixed;
+    right: 1rem;
+  }
+  body .container .description__title {
+    font-size: 1.5rem;
+  }
+  body .container .description__text {
+    font-size: 1.1rem;
+  }
+  body .container .skills {
+    padding: 1rem;
+  }
+  body .container .skills__title {
+    font-size: 1.5rem;
+  }
+  body .container .skills__container {
+    grid-template-columns: 1fr 1fr;
+  }
+  body .container .lister {
+    padding: 1rem;
+  }
+  body .container .lister__title {
+    font-size: 1.5rem;
+  }
+  body .container .lister__container .lister__item__title {
+    font-size: 1rem;
+  }
+  body .container .lister__container .lister__item__description {
+    font-size: 1rem;
+  }
+}
 @media print {
   body .container .header__buttons {
     display: none;
