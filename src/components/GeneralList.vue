@@ -40,12 +40,12 @@
 </template>
 
 <script lang="ts">
-interface generalListInterface {
+export interface generalListInterface {
   title: string;
   data: listDataInterface[];
 }
 
-interface listDataInterface {
+export interface listDataInterface {
   title: string;
   description: string;
   type?: "url" | "phone" | "email";

@@ -52,7 +52,7 @@ export default defineComponent({
     },
   },
   computed: {
-    title: function () {
+    title: function (): string {
       return this.isSpanish ? "Competencias" : "Skills";
     },
   },

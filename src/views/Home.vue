@@ -34,6 +34,7 @@ import {
   personalData,
   personalDataEn,
 } from "@/Constants";
+import { generalListInterface } from "@/components/GeneralList.vue";
 
 export default defineComponent({
   data() {
@@ -57,35 +58,37 @@ export default defineComponent({
     },
   },
   computed: {
-    educationData: function () {
+    educationData: function (): generalListInterface {
       return {
         title: this.isSpanish ? "Educación" : "Education",
         data: this.isSpanish ? educationData : educationDataEn,
       };
     },
-    experienceData: function () {
+    experienceData: function (): generalListInterface {
       return {
         title: this.isSpanish ? "Experiencia" : "Experience",
         data: this.isSpanish ? jobExperienceData : jobExperienceDataEn,
       };
     },
-    personalReferencesData: function () {
+    personalReferencesData: function (): generalListInterface {
       return {
         title: this.isSpanish
           ? "Referencias Personales"
           : "Personal References",
+        // @ts-ignore
         data: this.isSpanish ? referenceData : referenceDataEn,
       };
     },
-    aditionalCoursesData: function () {
+    aditionalCoursesData: function (): generalListInterface {
       return {
         title: this.isSpanish ? "Cursos Adicionales" : "Aditional Courses",
         data: this.isSpanish ? cursosData : cursosDataEn,
       };
     },
-    personalData: function () {
+    personalData: function (): generalListInterface {
       return {
         title: this.isSpanish ? "Datos Personales" : "Personal Data",
+        // @ts-ignore
         data: this.isSpanish ? personalData : personalDataEn,
       };
     },

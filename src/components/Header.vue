@@ -43,7 +43,7 @@ export default defineComponent({
     },
   },
   computed: {
-    job: function () {
+    job: function (): string {
       return this.isSpanish ? "Desarrollador front end" : "Front end developer";
     },
   },
