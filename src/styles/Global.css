@@ -140,7 +140,7 @@ body .container .lister__container .lister__item__description--link {
   cursor: pointer;
   text-decoration: none;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   body .container {
     margin-bottom: 5rem;
   }
