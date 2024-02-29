@@ -1,8 +1,6 @@
 <template>
   <div class="header">
-    <div class="header__image">
-      <img :src="profileImg" alt="profile" />
-    </div>
+    <div class="header__image"></div>
     <div class="header__name">
       <h1>Juan David Nuñez Aguilar</h1>
       <h2 class="header__name__job">{{ job }}</h2>

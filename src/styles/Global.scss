@@ -29,26 +29,6 @@ body {
       justify-content: space-between;
       align-items: center;
 
-      &__image {
-        width: fit-content;
-        display: flex;
-        align-items: center;
-        box-shadow: $shadow-soft;
-        padding: 5px;
-        border-radius: 10px;
-        border: 1px solid $border-color;
-        height: fit-content;
-
-        img {
-          border-radius: 10px;
-          max-width: 100px;
-          object-fit: cover;
-          object-position: top;
-          width: 100px;
-          height: 100px;
-        }
-      }
-
       &__name {
         h1,
         &__job {
@@ -63,6 +43,9 @@ body {
       }
 
       &__buttons {
+        position: fixed;
+        right: 1rem;
+
         .btn {
           outline: none;
           border: none;
@@ -187,11 +170,6 @@ body {
         &__image {
           display: none;
         }
-
-        &__buttons {
-          position: fixed;
-          right: 1rem;
-        }
       }
 
       .description {
@@ -201,7 +179,6 @@ body {
 
         &__text {
           font-size: 1.1rem;
-          // text-align: justify;
         }
       }
 
@@ -271,6 +248,7 @@ body {
 
       .lister {
         padding: 1rem;
+        margin: 1rem 0;
 
         &__title {
           font-size: 1.5rem;
