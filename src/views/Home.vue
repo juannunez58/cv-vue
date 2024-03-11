@@ -9,10 +9,9 @@
     <!-- Educacion -->
     <GeneralList :isSpanish="isSpanish" :list-data="educationData" />
     <!-- Personal references -->
-    <GeneralList :isSpanish="isSpanish" :list-data="personalReferencesData" />
+    <!-- <GeneralList :isSpanish="isSpanish" :list-data="personalReferencesData" /> -->
     <!-- Aditional courses -->
     <GeneralList :isSpanish="isSpanish" :list-data="aditionalCoursesData" />
-    <div class="break"></div>
     <!-- Personal Data -->
     <GeneralList :isSpanish="isSpanish" :list-data="personalData" />
   </div>

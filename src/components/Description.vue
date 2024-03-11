@@ -1,6 +1,6 @@
 <template>
   <div class="description">
-    <h2 class="description__title">{{ title }}</h2>
+    <!-- <h2 class="description__title">{{ title }}</h2> -->
     <p class="description__text">
       {{ isSpanish ? profileText : profileTextEn }}
     </p>
