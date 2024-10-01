@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "run-sass": "sass --watch src/styles/Global.scss:src/styles/Global.css --style compressed"
+
   },
   "dependencies": {
     "core-js": "^3.8.3",

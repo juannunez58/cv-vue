@@ -3,15 +3,20 @@
     <Header :isSpanish="isSpanish" @triggerLanguage="changeLanguage" />
     <Description :isSpanish="isSpanish" />
     <Skills :isSpanish="isSpanish" />
+    <div class="break"></div>
+
     <!-- Experience -->
     <GeneralList :isSpanish="isSpanish" :list-data="experienceData" />
     <div class="break"></div>
-    <!-- Educacion -->
-    <GeneralList :isSpanish="isSpanish" :list-data="educationData" />
+
     <!-- Personal references -->
     <!-- <GeneralList :isSpanish="isSpanish" :list-data="personalReferencesData" /> -->
+    <!-- Educacion -->
+    <GeneralList :isSpanish="isSpanish" :list-data="educationData" />
+
     <!-- Aditional courses -->
     <GeneralList :isSpanish="isSpanish" :list-data="aditionalCoursesData" />
+
     <!-- Personal Data -->
     <GeneralList :isSpanish="isSpanish" :list-data="personalData" />
   </div>

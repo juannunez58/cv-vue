@@ -11,6 +11,9 @@
         <span v-if="!item.type" class="lister__item__description">{{
           item.description
         }}</span>
+        <p v-if="item.experience" class="lister__item__experience">
+          {{ item.experience }}
+        </p>
         <a
           v-if="item.type === 'email'"
           :href="'mailto:' + item.description"
@@ -48,6 +51,7 @@ export interface generalListInterface {
 export interface listDataInterface {
   title: string;
   description: string;
+  experience?: string;
   type?: "url" | "phone" | "email";
 }
 import { defineComponent, PropType } from "vue";
