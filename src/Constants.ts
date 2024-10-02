@@ -43,6 +43,14 @@ const jobExperienceData = [
     `
   },
   {
+    title: "Fron end developer como Freelance, Barranquilla",
+    description: "agosto 2021 - actualmente",
+    experience: `
+      Me dedico a estimar, desarrollar y dar soporte a landing pages y dashboards administrativos para diferentes clientes.
+      En este caso he participado para clientes como Quirón virtual y Cesco y estoy utilizando los siguientes lenguajes de desarrollo: React, Vue, Javascript, Jquery, Css, Sass, Html
+    `
+  },
+  {
     title: "Analista de desarrollo en Red5g, Barranquilla",
     description: "octubre 2020 - agosto 2021",
     experience: `
@@ -73,6 +81,14 @@ const jobExperienceDataEn = [
       At Indra I was assigned to the Movistar client in Ecuador, I was in charge of adding functionalities and supporting their web application for payments and recharges.
       I also had to add functionalities and support their administrative website that registered new users.
       At this company I used React, Php, Javascript, Jquery, Css, Sass, Html
+    `
+  },
+  {
+    title: "Fron end developer as a Freelance, Barranquilla",
+    description: "August 2021 - Now",
+    experience: `
+      I am dedicated to estimate, develop new functionalities and support landing pages and administrative dashboards for different clients.
+      In this case I have participated for clients such as Quirón virtual and Cesco and i'm using the following development languages: React, Vue, Javascript, Jquery, Css, Sass, Html
     `
   },
   {
